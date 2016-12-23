@@ -5,5 +5,13 @@
  */
 'use strict';
 export class Product{
+  constructor(
+    public scu: string,
+    public name: string,
+    public imageUrl: string,
+    public department: Array<string>,
+    public price: number
+  ){
 
+  }
 }
