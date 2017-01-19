@@ -3,13 +3,16 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
-import { ProductListComponent } from './product-list/product-list.component';
+import {InventoryApp, ProductList, ProductRow, ProductImage, ProductDepartment, PriceDisplay} from "./app.component";
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ProductListComponent
+    InventoryApp,
+    ProductList,
+    ProductRow,
+    ProductImage,
+    ProductDepartment,
+    PriceDisplay
   ],
   imports: [
     BrowserModule,
@@ -17,6 +20,6 @@ import { ProductListComponent } from './product-list/product-list.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [InventoryApp]
 })
 export class AppModule { }
